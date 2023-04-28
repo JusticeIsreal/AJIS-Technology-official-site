@@ -404,12 +404,66 @@
 }
 .service .single-card .card {
   width: 100%;
+  position: relative;
 }
 @media only screen and (min-width: 680px) {
   .service .single-card .card {
     width: 50%;
     transform: scale(0.98);
   }
+}
+.service .single-card .card .service-txt {
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  position: absolute;
+  width: 80%;
+  bottom: 0;
+  padding: 5px;
+  padding-left: 10px;
+}
+@media only screen and (min-width: 680px) {
+  .service .single-card .card .service-txt {
+    padding-left: 20px;
+  }
+}
+.service .single-card .card .service-txt .desc {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.service .single-card .card .service-txt .desc h2 {
+  font-size: 40px !important;
+  color: white;
+}
+.service .single-card .card .service-txt .desc p {
+  color: white;
+  width: 100%;
+  line-height: 1.5;
+}
+@media only screen and (min-width: 900px) {
+  .service .single-card .card .service-txt .desc p {
+    width: 50%;
+  }
+}
+.service .single-card .card .service-txt .desc .card-btn {
+  width: 80px;
+  height: 25px;
+  border: 0.1px solid white;
+  margin-bottom: 20px;
+}
+.service .single-card .card .service-txt .desc .card-btn button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  color: black;
+  background: white;
+  cursor: pointer;
+}
+.service .single-card .card .service-txt .desc .card-btn button:hover {
+  background: black;
+  color: white;
 }
 .service .single-card .card img {
   width: 100%;
