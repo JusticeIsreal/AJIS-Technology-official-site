@@ -528,6 +528,10 @@ $txt-light-blue: #cfe8ff;
       color: #ffffff;
       opacity: 1;
       margin-bottom: auto;
+
+      @include responsive(bigphone) {
+        font-size: 50px;
+      }
     }
 
     .team-quote {
@@ -539,10 +543,19 @@ $txt-light-blue: #cfe8ff;
       padding: 15px;
       backdrop-filter: blur(5px);
       color: white;
+      @include responsive(bigphone) {
+        margin-bottom: 100px;
+      }
 
+      p {
+        font-size: 20px;
+      }
       h2 {
         font-size: 40px;
         color: white;
+        @include responsive(bigphone) {
+          font-size: 50px;
+        }
       }
     }
   }
