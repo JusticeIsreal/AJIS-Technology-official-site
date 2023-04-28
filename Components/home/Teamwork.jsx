@@ -16,7 +16,7 @@ function Teamwork() {
           <h2>epic</h2>
           <p>the customer is</p>
           <h2>everything</h2>
-          <div>
+          <div className="team-btn">
             <button>let's talk</button>
           </div>
         </div>
