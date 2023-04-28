@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Orbitron", sans-serif;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: rgba(245, 245, 245, 0);
+  display: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  display: none;
+  background-color: rgba(65, 105, 225, 0);
+}
+
+.homepage {
+  height: 100vh;
+}
+
+.nav-main-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: black;
+  border: 2px solid black;
+  height: 40px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.nav-main-con .nav-logo-con {
+  left: 0;
+  position: absolute;
+}
+.nav-main-con nav {
+  margin: 0 auto;
+  display: none;
+  z-index: 20;
+}
+@media only screen and (min-width: 680px) {
+  .nav-main-con nav {
+    display: block;
+  }
+}
+.nav-main-con nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.nav-main-con nav ul li {
+  margin: 0 50px;
+  color: white;
+  cursor: pointer;
+  padding: 3px 10px;
+}
+.nav-main-con nav ul li:hover {
+  background: white;
+  color: black;
+}
+
+.banner-main-con {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  background: url(/tim-foster-wX64_Gjbclg-unsplash.jpg) no-repeat fixed;
+  background-size: contain;
+  height: 275px;
+  overflow: hidden !important;
+  background-color: black;
+}
+@media only screen and (min-width: 680px) {
+  .banner-main-con {
+    background: url(/tim-foster-wX64_Gjbclg-unsplash.jpg) no-repeat center center fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-size: cover;
+    height: calc(100vh - 40px);
+  }
+}
+.banner-main-con .image-logo-con {
+  width: 100%;
+  height: 275px;
+  position: absolute;
+}
+@media only screen and (min-width: 680px) {
+  .banner-main-con .image-logo-con {
+    width: 60%;
+    height: 100%;
+  }
+}
+.banner-main-con .image-logo-con .logo-image {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: auto;
+  margin-top: -80px;
+}
+@media only screen and (min-width: 680px) {
+  .banner-main-con .image-logo-con .logo-image {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 70% !important;
+    height: 100vh;
+    margin: 0 auto;
+    margin-top: 0px;
+  }
+}
+.banner-main-con .banner-text {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: 20px;
+  color: white;
+  position: relative;
+  height: 90px;
+  padding: 0 10px;
+}
+@media only screen and (min-width: 680px) {
+  .banner-main-con .banner-text {
+    margin-bottom: 50px;
+    padding: 10px;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .banner-main-con .banner-text {
+    margin-bottom: 10px;
+  }
+}
+.banner-main-con .banner-text .banner-heading-table {
+  display: none;
+}
+@media only screen and (min-width: 680px) {
+  .banner-main-con .banner-text .banner-heading-table {
+    display: block;
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .banner-main-con .banner-text .banner-heading-table {
+    font-size: 50px;
+  }
+}
+.banner-main-con .banner-text .banner-heading-mobile-desktop {
+  font-size: 20px;
+  line-height: 2;
+}
+@media only screen and (min-width: 680px) {
+  .banner-main-con .banner-text .banner-heading-mobile-desktop {
+    display: none;
+  }
+}
+.banner-main-con .banner-text p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+@media only screen and (min-width: 680px) {
+  .banner-main-con .banner-text p {
+    font-size: 20px;
+  }
+}
+.banner-main-con .banner-text .lets-talk-btn {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  border: 0.1px solid white;
+  width: 100px;
+}
+@media only screen and (min-width: 680px) {
+  .banner-main-con .banner-text .lets-talk-btn {
+    width: 200px;
+    height: 40px;
+    font-size: 25px;
+    position: relative;
+    bottom: -10px;
+    left: 3px;
+  }
+}
+.banner-main-con .banner-text .lets-talk-btn button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: black;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+}
+.banner-main-con .banner-text .lets-talk-btn button:hover {
+  background: white;
+  color: black;
+}
+@media only screen and (min-width: 680px) {
+  .banner-main-con .banner-text .lets-talk-btn button {
+    font-size: 20px;
+  }
+}
+
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 80px;
+}
+@media only screen and (min-width: 680px) {
+  .about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .about-us {
+    height: 350px;
+  }
+}
+.about-us .video-con {
+  width: 100%;
+}
+@media only screen and (min-width: 680px) {
+  .about-us .video-con {
+    width: 40%;
+  }
+}
+.about-us .video-con video {
+  width: 100%;
+}
+.about-us .about-txt-con {
+  position: relative;
+  overflow: hidden;
+  margin-top: 30px;
+}
+@media only screen and (min-width: 680px) {
+  .about-us .about-txt-con {
+    width: 50%;
+    height: 100% !important;
+    margin: 0;
+  }
+}
+.about-us .about-txt-con h1 {
+  position: relative;
+  font-size: 30px;
+  margin-top: 15px;
+  margin-left: 25px;
+  z-index: 10;
+}
+.about-us .about-txt-con h1 span {
+  padding-bottom: 8px;
+  border-bottom: 5px solid black;
+}
+@media only screen and (min-width: 680px) {
+  .about-us .about-txt-con h1 {
+    font-size: 40px;
+  }
+}
+.about-us .about-txt-con .bg-img {
+  position: absolute;
+  left: 100px;
+  top: -100px;
+  z-index: 0;
+  width: 100%;
+  opacity: 0.7;
+}
+@media only screen and (min-width: 680px) {
+  .about-us .about-txt-con .bg-img {
+    left: 250px;
+  }
+}
+.about-us .about-txt-con p {
+  position: relative;
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 25px;
+  font-weight: 300;
+  width: 80%;
+  z-index: 20;
+}
+@media only screen and (min-width: 900px) {
+  .about-us .about-txt-con p {
+    width: 50%;
+  }
+}
+.about-us .about-txt-con h4 {
+  margin-top: 20px;
+  margin-left: 25px;
+}
+.about-us .about-txt-con .goal-img {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 5px;
+  background: white;
+  z-index: 10;
+}
+.about-us .about-txt-con .goal-img img {
+  width: 100px;
+  position: relative;
+}
+@media only screen and (min-width: 900px) {
+  .about-us .about-txt-con .goal-img {
+    width: 400px;
+    margin-left: 25px;
+  }
+}/*# sourceMappingURL=style.css.map */

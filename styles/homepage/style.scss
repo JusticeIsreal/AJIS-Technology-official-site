@@ -1,0 +1,364 @@
+// @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:wght@300&family=Source+Code+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+// global variables
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Orbitron", sans-serif;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: rgba(245, 245, 245, 0);
+  display: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  display: none;
+  background-color: rgba(65, 105, 225, 0);
+}
+
+$font-family: "Poppins", sans-serif;
+$bg-light: #f9f9f9;
+$font-light: #666;
+$bg-gray: #eee;
+$bg-dark-gray: #444;
+$bg-dark: #342e37;
+$txt-blue: #3c91e6;
+$txt-light-blue: #cfe8ff;
+
+@mixin flexDisplay($justifyProp, $alignProp, $flexDirection) {
+  display: flex;
+  justify-content: $justifyProp;
+  align-items: $alignProp;
+  flex-direction: $flexDirection;
+}
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint==phone {
+    @media only screen and (min-width: 320px) {
+      @content;
+    }
+  }
+  @if $breakpoint==bigphone {
+    @media only screen and (min-width: 680px) {
+      @content;
+    }
+  }
+  @if $breakpoint==tablet {
+    @media only screen and (min-width: 900px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==desktop {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+// Hopme page
+.homepage {
+  // border: 1px solid red;
+  height: 100vh;
+}
+
+// NAV BAR
+.nav-main-con {
+  @include flexDisplay(center, center, row);
+  background-color: black;
+  border: 2px solid black;
+  height: 40px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  // position: fixed;
+
+  .nav-logo-con {
+    left: 0;
+    position: absolute;
+  }
+  nav {
+    margin: 0 auto;
+    display: none;
+    z-index: 20;
+    @include responsive(bigphone) {
+      display: block;
+    }
+    ul {
+      @include flexDisplay(center, center, row);
+      li {
+        margin: 0 50px;
+        color: white;
+        cursor: pointer;
+        padding: 3px 10px;
+
+        &:hover {
+          background: white;
+          color: black;
+        }
+      }
+    }
+  }
+}
+// Banner
+.banner-main-con {
+  @include flexDisplay(flex-start, flex-start, row);
+  background: url(/tim-foster-wX64_Gjbclg-unsplash.jpg) no-repeat fixed;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  height: 275px;
+  overflow: hidden !important;
+  background-color: black;
+  // border: 2px solid red;
+
+  @include responsive(bigphone) {
+    background: url(/tim-foster-wX64_Gjbclg-unsplash.jpg) no-repeat center
+      center fixed;
+    @include flexDisplay(center, center, row);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: calc(100vh - 40px);
+  }
+  .image-logo-con {
+    width: 100%;
+    height: 275px;
+    position: absolute;
+    // border: 2px solid rgb(4, 0, 255);
+
+    @include responsive(bigphone) {
+      width: 60%;
+      height: 100%;
+    }
+
+    .logo-image {
+      object-fit: contain;
+      width: 100%;
+      height: auto;
+      margin-top: -80px;
+
+      @include responsive(bigphone) {
+        object-fit: contain;
+        width: 70% !important;
+        height: 100vh;
+        margin: 0 auto;
+        margin-top: 0px;
+      }
+    }
+  }
+
+  .banner-text {
+    // border: 2px solid red;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 20px;
+    color: white;
+    position: relative;
+    height: 90px;
+    padding: 0 10px;
+
+    @include responsive(bigphone) {
+      margin-bottom: 50px;
+      padding: 10px;
+      height: auto;
+    }
+    @include responsive(tablet) {
+      margin-bottom: 10px;
+    }
+    .banner-heading-table {
+      display: none;
+
+      @include responsive(bigphone) {
+        display: block;
+        font-size: 30px;
+      }
+      @include responsive(tablet) {
+        font-size: 50px;
+        // line-height: 2;
+      }
+    }
+    .banner-heading-mobile-desktop {
+      font-size: 20px;
+      line-height: 2;
+
+      @include responsive(bigphone) {
+        display: none;
+      }
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.5;
+
+      @include responsive(bigphone) {
+        font-size: 20px;
+      }
+    }
+    .lets-talk-btn {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      border: 0.1px solid white;
+      width: 100px;
+
+      @include responsive(bigphone) {
+        width: 200px;
+        height: 40px;
+        font-size: 25px;
+        position: relative;
+        bottom: -10px;
+        left: 3px;
+      }
+
+      button {
+        width: 100%;
+        height: 100%;
+        border: none;
+        background: black;
+        color: white;
+        padding: 5px;
+        cursor: pointer;
+        &:hover {
+          background: white;
+          color: black;
+        }
+
+        @include responsive(bigphone) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+// ABOUT US
+.about-us {
+  // border: 2px solid red;
+  @include flexDisplay(center, center, column);
+  width: 100%;
+  margin-top: 80px;
+
+  @include responsive(bigphone) {
+    @include flexDisplay(center, center, row);
+    display: flex;
+    justify-content: space-between;
+  }
+  @include responsive(tablet) {
+    height: 350px;
+  }
+  .video-con {
+    width: 100%;
+    // margin-bottom: auto;
+    @include responsive(bigphone) {
+      width: 40%;
+    }
+
+    video {
+      width: 100%;
+    }
+  }
+
+  .about-txt-con {
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+    // border: 2px solid red;
+
+    // background: url(/lucas-sankey-WM6Rj6yITvs-unsplash-removebg-preview.png)
+    //   no-repeat center center fixed;
+    // @include flexDisplay(center, center, column);
+    // -webkit-background-size: contain;
+    // -moz-background-size: contain;
+    // -o-background-size: contain;
+    // background-size: contain;
+    // padding: 50px 0;
+    // height: 100%;
+
+    @include responsive(bigphone) {
+      width: 50%;
+      height: 100% !important;
+      margin: 0;
+    }
+
+    h1 {
+      position: relative;
+      font-size: 30px;
+      margin-top: 15px;
+      margin-left: 25px;
+      z-index: 10;
+      span {
+        padding-bottom: 8px;
+        border-bottom: 5px solid black;
+      }
+
+      @include responsive(bigphone) {
+        font-size: 40px;
+        // margin-top: 15px;
+        // margin-left: 55px;
+      }
+    }
+    .bg-img {
+      position: absolute;
+      left: 100px;
+      top: -100px;
+      z-index: 0;
+      width: 100%;
+
+      // backdrop-filter: blur(10px) !important;
+      opacity: 0.7;
+      @include responsive(bigphone) {
+        left: 250px;
+      }
+    }
+
+    p {
+      position: relative;
+      font-size: 15px;
+      margin-top: 25px;
+      margin-left: 25px;
+      font-weight: 300;
+      width: 80%;
+      z-index: 20;
+
+      @include responsive(tablet) {
+        width: 50%;
+      }
+    }
+
+    h4 {
+      margin-top: 20px;
+      margin-left: 25px;
+    }
+    .goal-img {
+      position: relative;
+      // border: 2px solid rgb(0, 255, 4);
+      @include flexDisplay(space-between, center, row);
+      width: 90%;
+
+      margin: 0 auto;
+      margin-top: 5px;
+      background: white;
+      z-index: 10;
+      img {
+        width: 100px;
+        position: relative;
+        // margin-top: auto;
+        // border: 2px solid red;
+      }
+
+      @include responsive(tablet) {
+        width: 400px;
+        margin-left: 25px;
+      }
+    }
+  }
+}
