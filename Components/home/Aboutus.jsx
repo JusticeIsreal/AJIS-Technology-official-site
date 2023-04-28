@@ -4,7 +4,7 @@ function Aboutus() {
   return (
     <div className="about-us">
       <div className="video-con">
-        <img src="/jessy-smith-zFOm6KzA-7g-unsplash.jpg" alt="" />
+        <img src="/jessy-smith-zFOm6KzA-7g-unsplash-removebg-preview.png" alt="" />
       </div>
       <div className="about-txt-con">
         <h1>
