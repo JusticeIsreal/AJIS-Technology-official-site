@@ -4,12 +4,6 @@ function Aboutus() {
   return (
     <div className="about-us">
       <div className="video-con">
-        {/* <video autoPlay muted loop controls={false}>
-          <source
-            src="https://res.cloudinary.com/isreal/video/upload/v1682682916/Put_your_business_on_the_web._E-commerce_app_for_SALE_or6ubw.mov"
-            type="video/mp4"
-          />
-        </video> */}
         <img src="/jessy-smith-zFOm6KzA-7g-unsplash.jpg" alt="" />
       </div>
       <div className="about-txt-con">
@@ -30,7 +24,9 @@ function Aboutus() {
           <img src="/3M+-01-01-01.png" alt="" />
           <img src="/10k+-01-01.png" alt="" />
         </div>
-
+        <div className="lets-talk-btn">
+          <button>Let's talk !</button>
+        </div>
         <img
           className="bg-img"
           src="/lucas-sankey-WM6Rj6yITvs-unsplash-removebg-preview.png"
