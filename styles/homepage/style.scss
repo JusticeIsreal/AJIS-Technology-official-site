@@ -505,3 +505,45 @@ $txt-light-blue: #cfe8ff;
     }
   }
 }
+// ..Team work
+.teamwork {
+  // border: 2px solid red;
+  margin-top: 80px;
+  background: black;
+
+  .lower-team-bg {
+    background: url(/marvin-meyer-SYTO3xs06fU-unsplash.jpg) no-repeat center
+      center fixed;
+    @include flexDisplay(center, flex-start, column);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    // height: calc(100vh - 40px);
+    height: 700px;
+    // opacity: 0.7;
+    padding: 10px;
+    h2 {
+      font-size: 30px;
+      color: #ffffff;
+      opacity: 1;
+      margin-bottom: auto;
+    }
+
+    .team-quote {
+      // @include flexDisplay(center, flex-start, column);
+      // border: 2px solid red;
+      margin-bottom: 200px;
+      // width: 200px;
+      // height: 350px;
+      padding: 15px;
+      backdrop-filter: blur(5px);
+      color: white;
+
+      h2 {
+        font-size: 40px;
+        color: white;
+      }
+    }
+  }
+}

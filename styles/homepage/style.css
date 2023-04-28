@@ -483,4 +483,36 @@
   .service .single-card .card img {
     height: 450px;
   }
+}
+
+.teamwork {
+  margin-top: 80px;
+  background: black;
+}
+.teamwork .lower-team-bg {
+  background: url(/marvin-meyer-SYTO3xs06fU-unsplash.jpg) no-repeat center center fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-size: cover;
+  height: 700px;
+  padding: 10px;
+}
+.teamwork .lower-team-bg h2 {
+  font-size: 30px;
+  color: #ffffff;
+  opacity: 1;
+  margin-bottom: auto;
+}
+.teamwork .lower-team-bg .team-quote {
+  margin-bottom: 200px;
+  padding: 15px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  color: white;
+}
+.teamwork .lower-team-bg .team-quote h2 {
+  font-size: 40px;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
