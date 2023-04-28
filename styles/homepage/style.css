@@ -222,9 +222,14 @@
     justify-content: space-between;
   }
 }
+@media only screen and (min-width: 680px) {
+  .about-us {
+    height: 390px;
+  }
+}
 @media only screen and (min-width: 900px) {
   .about-us {
-    height: 350px;
+    height: 450px;
   }
 }
 .about-us .video-con {
@@ -324,6 +329,7 @@
   border: 0.1px solid white;
   width: 150px;
   height: 40px;
+  margin-bottom: 10px;
 }
 @media only screen and (min-width: 680px) {
   .about-us .about-txt-con .lets-talk-btn {
@@ -340,6 +346,7 @@
   height: 100%;
   border: 1px solid black;
   background: white;
+  color: black;
   padding: 5px;
   cursor: pointer;
 }
@@ -350,5 +357,76 @@
 @media only screen and (min-width: 680px) {
   .about-us .about-txt-con .lets-talk-btn button {
     font-size: 20px;
+  }
+}
+
+.service {
+  background: whitesmoke;
+}
+.service h1 {
+  position: relative;
+  font-size: 30px;
+  margin-left: 55vw;
+  margin-bottom: 20px;
+  padding-top: 50px;
+  z-index: 10;
+}
+.service h1 span {
+  padding-bottom: 5px;
+  border-bottom: 5px solid black;
+}
+@media only screen and (min-width: 680px) {
+  .service h1 {
+    font-size: 40px;
+    margin-left: 75vw;
+  }
+}
+.service .single-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+@media only screen and (min-width: 680px) {
+  .service .single-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 680px) and (min-width: 900px) {
+  .service .single-card {
+    max-width: 1600px;
+  }
+}
+.service .single-card .card {
+  width: 100%;
+}
+@media only screen and (min-width: 680px) {
+  .service .single-card .card {
+    width: 50%;
+    transform: scale(0.98);
+  }
+}
+.service .single-card .card img {
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (min-width: 680px) {
+  .service .single-card .card img {
+    height: 250px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .service .single-card .card img {
+    height: 350px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .service .single-card .card img {
+    height: 450px;
   }
 }/*# sourceMappingURL=style.css.map */

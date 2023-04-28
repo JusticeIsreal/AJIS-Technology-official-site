@@ -252,8 +252,11 @@ $txt-light-blue: #cfe8ff;
     display: flex;
     justify-content: space-between;
   }
+  @include responsive(bigphone) {
+    height: 390px;
+  }
   @include responsive(tablet) {
-    height: 350px;
+    height: 450px;
   }
   .video-con {
     width: 100%;
@@ -352,6 +355,7 @@ $txt-light-blue: #cfe8ff;
       border: 0.1px solid white;
       width: 150px;
       height: 40px;
+      margin-bottom: 10px;
 
       @include responsive(bigphone) {
         width: 200px;
@@ -367,6 +371,7 @@ $txt-light-blue: #cfe8ff;
         height: 100%;
         border: 1px solid black;
         background: white;
+        color: black;
         padding: 5px;
         cursor: pointer;
         &:hover {
@@ -376,6 +381,69 @@ $txt-light-blue: #cfe8ff;
 
         @include responsive(bigphone) {
           font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+// SERVICES
+
+.service {
+  // border: 2px solid red;
+  // margin-top: 50px;
+  background: whitesmoke;
+
+  h1 {
+    position: relative;
+    font-size: 30px;
+    margin-left: 55vw;
+    margin-bottom: 20px;
+    padding-top: 50px;
+    z-index: 10;
+    span {
+      padding-bottom: 5px;
+      border-bottom: 5px solid black;
+    }
+
+    @include responsive(bigphone) {
+      font-size: 40px;
+      margin-left: 75vw;
+    }
+  }
+  .single-card {
+    // border: 2px solid red;
+    @include flexDisplay(space-between, center, column);
+
+    @include responsive(bigphone) {
+      @include flexDisplay(space-between, center, row);
+      flex-wrap: wrap;
+      margin: 0 auto;
+      // gap: 5px;
+      @include responsive(tablet) {
+        max-width: 1600px;
+      }
+
+      // width: 45%;
+    }
+    .card {
+      width: 100%;
+      @include responsive(bigphone) {
+        width: 50%;
+        transform: scale(0.98);
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        @include responsive(bigphone) {
+          height: 250px;
+        }
+        @include responsive(tablet) {
+          height: 350px;
+        }
+        @include responsive(desktop) {
+          height: 450px;
         }
       }
     }
