@@ -1,3 +1,4 @@
+import ContactForm from "@/Components/ContactForm";
 import Aboutus from "@/Components/home/Aboutus";
 import Banner from "@/Components/home/Banner";
 import Navbar from "@/Components/home/Navbar";
@@ -13,6 +14,7 @@ function homepage() {
       <Aboutus />
       <Services />
       <Teamwork />
+      <ContactForm />
     </div>
   );
 }

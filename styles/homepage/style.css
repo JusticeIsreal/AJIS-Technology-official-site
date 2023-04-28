@@ -500,9 +500,8 @@
   padding: 10px;
 }
 .teamwork .lower-team-bg h2 {
-  font-size: 30px;
+  font-size: 35px;
   color: #ffffff;
-  opacity: 1;
   margin-bottom: auto;
 }
 @media only screen and (min-width: 680px) {
@@ -535,10 +534,10 @@
   }
 }
 .teamwork .lower-team-bg .team-quote .team-btn {
-  width: 80px;
-  height: 25px;
+  width: 100px;
+  height: 30px;
   border: 0.1px solid white;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 @media only screen and (min-width: 680px) {
   .teamwork .lower-team-bg .team-quote .team-btn {
@@ -555,6 +554,64 @@
   cursor: pointer;
 }
 .teamwork .lower-team-bg .team-quote .team-btn button:hover {
+  background: black;
+  color: white;
+}
+
+.contact-form {
+  height: 70vh;
+  background: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.contact-form form {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 100%;
+  max-width: 700px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-form form .input-main-con {
+  width: 100%;
+}
+.contact-form form .input-main-con .input-con {
+  width: 100%;
+}
+.contact-form form .input-main-con .input-con input {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 15px;
+}
+.contact-form form .input-main-con .input-con textarea {
+  width: 100%;
+  height: 70px;
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 15px;
+}
+.contact-form form .login-btn-link {
+  border: 0.2px solid black;
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+}
+.contact-form form .login-btn-link input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  color: black;
+  background: white;
+  cursor: pointer;
+}
+.contact-form form .login-btn-link input:hover {
   background: black;
   color: white;
 }/*# sourceMappingURL=style.css.map */
