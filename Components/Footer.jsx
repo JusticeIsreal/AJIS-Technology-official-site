@@ -1,232 +1,35 @@
 import React from "react";
-// import ReactDOM from "react-dom";
-// import styled, { css } from "styled-components";
-
-// const media = {
-//   desktop: (...args) => css`
-//     @media (min-width: 870px) {
-//       ${css(...args)};
-//     }
-//   `,
-// };
-
-// const Footer = styled.footer`
-//   font-family: nunito-sans, sans-serif;
-//   text-align: center;
-//   ${media.desktop`
-//     text-align: left;
-//   `}
-// `;
-
-// const TopBar = styled.div`
-//   margin: auto;
-//   max-width: 1280px;
-//   padding: 40px 0;
-//   ${media.desktop`
-//     padding: 45px 80px;
-//     display: flex;
-//     flex-flow: row;
-//     justify-content: space-between;
-//   `}
-// `;
-
-// const GetTheApp = styled.div`
-//   font-size: 18px;
-//   font-weight: 900;
-//   line-height: 1.11;
-//   color: #2b2738;
-//   margin: 0 -15px;
-//   display: flex;
-//   flex-flow: row;
-//   flex-wrap: wrap;
-//   ${media.desktop`
-//     flex-wrap: nowrap;
-//     align-items: center;
-//     white-space: nowrap;
-//   `}
-// `;
-
-// const GetTheAppTitle = styled.div`
-//   margin-bottom: 4px;
-//   width: 100%;
-//   ${media.desktop`
-//     width: unset;
-//     margin: 0 15px;
-//   `}
-// `;
-
-// const AppStoreApp = styled.img`
-//   width: 189px;
-//   height: 63px;
-//   margin: 16px auto;
-//   padding: 0 20px;
-//   ${media.desktop`
-//     padding: 0;
-//     margin: 0 8px;
-//   `}
-// `;
-
-// const GoogleApp = styled.img`
-//   width: 189px;
-//   height: 63px;
-//   margin: 16px auto;
-//   padding: 0 20px;
-//   ${media.desktop`
-//     padding: 0;
-//     margin: 0 8px;
-//   `}
-// `;
-
-// const DesktopSocialList = styled.div`
-//   display: none;
-//   ${media.desktop`
-//     display: flex;
-//     align-items: center;
-//   `};
-// `;
-
-// const MobileSocialList = styled.div`
-//   padding-bottom: 40px;
-//   width: 100%;
-//   ${media.desktop`
-//     display: none;
-//   `};
-// `;
-
-// const Twitter = styled.svg`
-//   border: 1px lightgray solid;
-//   width: 33px;
-//   height: 33px;
-//   margin-left: 5px;
-// `;
-
-// const Facebook = styled.svg`
-//   border: 1px lightgray solid;
-//   width: 33px;
-//   height: 33px;
-//   margin-left: 5px;
-// `;
-
-// const Instagram = styled.svg`
-//   border: 1px lightgray solid;
-//   width: 33px;
-//   height: 33px;
-//   margin-left: 5px;
-// `;
-
-// const HR = styled.div`
-//   display: none;
-//   ${media.desktop`
-//     height: 0;
-//     padding: 0;
-//     margin: 0;
-//     display: block;
-//     border-bottom: 1px #cacada solid;
-//   `};
-// `;
-
-// const BottomBar = styled.div`
-//   max-width: 1280px;
-//   margin: auto;
-//   display: flex;
-//   flex-flow: row;
-//   flex-wrap: wrap;
-//   justify-content: center;
-//   ${media.desktop`
-//     flex-wrap: nowrap;
-//     padding: 40px 80px 60px;
-//     justify-content: space-between;
-//   `};
-// `;
-
-// const Menu = styled.div`
-//   margin-bottom: 30px;
-//   min-width: 50%;
-//   ${media.desktop`
-//     min-width: unset;
-//     margin-bottom: 0;
-//     margin-right: 40px;
-//   `}
-// `;
-
-// const MenuHead = styled.div`
-//   margin-bottom: 10px;
-//   font-size: 18px;
-//   font-weight: 900;
-//   line-height: 1.11;
-//   color: #2b2738;
-// `;
-
-// const MenuLink = styled.a`
-//   display: block;
-//   text-decoration: none;
-//   font-size: 16px;
-//   font-weight: 600;
-//   line-height: 2;
-//   color: #2f6cb3;
-//   ${media.desktop`
-//     white-space: nowrap;
-//   `}
-// `;
-
-// const Policy = styled.div`
-//   width: 100%;
-//   max-width: 764px;
-//   font-size: 12px;
-//   line-height: 1.33;
-//   color: #2b2738;
-//   margin: 0 20px;
-// `;
-
-// const PolicyRow = styled.p`
-//   margin: 0;
-//   padding: 0;
-//   padding-bottom: 20px;
-// `;
 
 const menu = [
   {
-    name: "Program Guides",
+    name: "Services",
     links: [
-      { title: "Rough Around The Edges", url: "www.openfit.com" },
-      { title: "Xtend Barre", url: "www.openfit.com" },
-      { title: "600 Seconds", url: "www.openfit.com" },
-      { title: "Yoga52", url: "www.openfit.com" },
+      { title: "Mobile app development", url: "www.openfit.com" },
+      { title: "Website development", url: "www.openfit.com" },
+      { title: "UI/ UX", url: "www.openfit.com" },
+      { title: "Graphics Design", url: "www.openfit.com" },
     ],
   },
   {
-    name: "About Us",
+    name: "Quick links",
     links: [
-      { title: "About Openfit", url: "www.openfit.com" },
-      { title: "Help and Feedback", url: "www.openfit.com" },
-      { title: "Terms and Condition", url: "www.openfit.com" },
-      { title: "Privacy Policy", url: "www.openfit.com" },
-      { title: "FAQ", url: "www.openfit.com" },
+      { title: "who we are", url: "www.openfit.com" },
+      { title: "what we do", url: "www.openfit.com" },
+      { title: "our mantra", url: "www.openfit.com" },
+      { title: "contact us", url: "www.openfit.com" },
     ],
   },
 ];
 
-// const SocialList = () => (
-//   <>
-//     <Twitter />
-//     <Facebook />
-//     <Instagram />
-//   </>
-// );
+import { BsWhatsapp } from "react-icons/bs";
+import { CiFacebook } from "react-icons/ci";
+import { BsInstagram } from "react-icons/bs";
+import { FiTwitter } from "react-icons/fi";
+import { AiOutlineMail } from "react-icons/ai";
+
 function Footer() {
   return (
     <div className="Footer">
-      <div className="TopBar">
-        <div className="GetTheApp">
-          <div className="GetTheAppTitle"> Get The App</div>
-          <div className="AppStoreApp" />
-          <div className="GoogleApp" />
-        </div>
-        <div className="DesktopSocialList">
-          <div className="SocialList" />
-        </div>
-      </div>
-      <div className="HR" />
       <div className="BottomBar">
         {menu.map(({ name, links }) => (
           <div className="Menu">
@@ -243,14 +46,14 @@ function Footer() {
         </div>
         <div className="Policy">
           <div className="PolicyRow">
-            © 2019 Openfit, LLC. All rights reserved.
+            © 2022 AJIS TECHNOLOGY. All rights reserved.
           </div>
           <div className="PolicyRow">
-            +Results vary depending on starting point and effort. Exercise and
-            proper diet are necessary to achieve and maintain weight loss and
-            muscle definition. The testimonials featured may have used more than
-            one product or extended the program to achieve their maximum
-            results.
+            <BsWhatsapp className="footer-icon" />
+            <CiFacebook className="footer-icon" />
+            <BsInstagram className="footer-icon" />
+            <FiTwitter className="footer-icon" />
+            <AiOutlineMail className="footer-icon" />
           </div>
           <div className="PolicyRow">
             Consult your physician and follow all safety instructions before

@@ -636,50 +636,6 @@
   }
 }
 
-.GetTheApp {
-  font-size: 18px;
-  font-weight: 900;
-  line-height: 1.11;
-  color: #2b2738;
-  margin: 0 -15px;
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-}
-@media only screen and (min-width: 680px) {
-  .GetTheApp {
-    flex-wrap: nowrap;
-    align-items: center;
-    white-space: nowrap;
-  }
-}
-
-.GetTheAppTitle {
-  width: 189px;
-  height: 63px;
-  margin: 16px auto;
-  padding: 0 20px;
-}
-@media only screen and (min-width: 680px) {
-  .GetTheAppTitle {
-    padding: 0;
-    margin: 0 8px;
-  }
-}
-
-.GoogleApp {
-  width: 189px;
-  height: 63px;
-  margin: 16px auto;
-  padding: 0 20px;
-}
-@media only screen and (min-width: 680px) {
-  .GoogleApp {
-    padding: 0;
-    margin: 0 8px;
-  }
-}
-
 .DesktopSocialList {
   padding-bottom: 40px;
   width: 100%;
@@ -687,40 +643,6 @@
 @media only screen and (min-width: 680px) {
   .DesktopSocialList {
     display: none;
-  }
-}
-
-.Twitter {
-  border: 1px lightgray solid;
-  width: 33px;
-  height: 33px;
-  margin-left: 5px;
-}
-
-.Facebook {
-  border: 1px lightgray solid;
-  width: 33px;
-  height: 33px;
-  margin-left: 5px;
-}
-
-.Instagram {
-  border: 1px lightgray solid;
-  width: 33px;
-  height: 33px;
-  margin-left: 5px;
-}
-
-.HR {
-  display: none;
-}
-@media only screen and (min-width: 680px) {
-  .HR {
-    height: 0;
-    padding: 0;
-    margin: 0;
-    display: block;
-    border-bottom: 1px #cacada solid;
   }
 }
 
@@ -787,4 +709,15 @@
   margin: 0;
   padding: 0;
   padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.PolicyRow .footer-icon {
+  font-size: 20px;
+  margin: 10px;
+}
+.PolicyRow .footer-icon:hover {
+  transform: translateY(5px);
 }/*# sourceMappingURL=style.css.map */

@@ -666,83 +666,12 @@ $txt-light-blue: #cfe8ff;
   }
 }
 
-.GetTheApp {
-  font-size: 18px;
-  font-weight: 900;
-  line-height: 1.11;
-  color: #2b2738;
-  margin: 0 -15px;
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-
-  @include responsive(bigphone) {
-    flex-wrap: nowrap;
-    align-items: center;
-    white-space: nowrap;
-  }
-}
-
-.GetTheAppTitle {
-  width: 189px;
-  height: 63px;
-  margin: 16px auto;
-  padding: 0 20px;
-
-  @include responsive(bigphone) {
-    padding: 0;
-    margin: 0 8px;
-  }
-}
-
-.GoogleApp {
-  width: 189px;
-  height: 63px;
-  margin: 16px auto;
-  padding: 0 20px;
-
-  @include responsive(bigphone) {
-    padding: 0;
-    margin: 0 8px;
-  }
-}
 .DesktopSocialList {
   padding-bottom: 40px;
   width: 100%;
 
   @include responsive(bigphone) {
     display: none;
-  }
-}
-
-.Twitter {
-  border: 1px lightgray solid;
-  width: 33px;
-  height: 33px;
-  margin-left: 5px;
-}
-
-.Facebook {
-  border: 1px lightgray solid;
-  width: 33px;
-  height: 33px;
-  margin-left: 5px;
-}
-.Instagram {
-  border: 1px lightgray solid;
-  width: 33px;
-  height: 33px;
-  margin-left: 5px;
-}
-.HR {
-  display: none;
-
-  @include responsive(bigphone) {
-    height: 0;
-    padding: 0;
-    margin: 0;
-    display: block;
-    border-bottom: 1px #cacada solid;
   }
 }
 
@@ -803,4 +732,18 @@ $txt-light-blue: #cfe8ff;
   margin: 0;
   padding: 0;
   padding-bottom: 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .footer-icon {
+    font-size: 20px;
+    margin: 10px;
+
+    &:hover {
+      transform: translateY(5px);
+    }
+  }
 }
