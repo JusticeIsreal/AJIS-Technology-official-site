@@ -4,19 +4,10 @@ const menu = [
   {
     name: "Services",
     links: [
-      { title: "Mobile app development", url: "www.openfit.com" },
-      { title: "Website development", url: "www.openfit.com" },
-      { title: "UI/ UX", url: "www.openfit.com" },
-      { title: "Graphics Design", url: "www.openfit.com" },
-    ],
-  },
-  {
-    name: "Quick links",
-    links: [
-      { title: "who we are", url: "www.openfit.com" },
-      { title: "what we do", url: "www.openfit.com" },
-      { title: "our mantra", url: "www.openfit.com" },
-      { title: "contact us", url: "www.openfit.com" },
+      { title: "Mobile app development", url: "/mobileapp" },
+      { title: "Website development", url: "/website" },
+      { title: "UI/ UX", url: "/uiux" },
+      { title: "Graphics Design", url: "/design" },
     ],
   },
 ];
@@ -25,7 +16,7 @@ import { BsWhatsapp } from "react-icons/bs";
 import { CiFacebook } from "react-icons/ci";
 import { BsInstagram } from "react-icons/bs";
 import { FiTwitter } from "react-icons/fi";
-import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 
 function Footer() {
   return (
@@ -35,9 +26,9 @@ function Footer() {
           <div className="Menu">
             <div className="MenuHead">{name}</div>
             {links.map(({ title, url }) => (
-              <div className="MenuLink" href={url}>
+              <a className="MenuLink" href={url}>
                 {title}
-              </div>
+              </a>
             ))}
           </div>
         ))}
@@ -49,23 +40,39 @@ function Footer() {
             © 2022 AJIS TECHNOLOGY. All rights reserved.
           </div>
           <div className="PolicyRow">
-            <BsWhatsapp className="footer-icon" />
-            <CiFacebook className="footer-icon" />
-            <BsInstagram className="footer-icon" />
-            <FiTwitter className="footer-icon" />
-            <AiOutlineMail className="footer-icon" />
+            <a href="tel:+9029356196" target="_blank">
+              <AiOutlinePhone className="footer-icon" />
+            </a>
+            <a href="https://wa.me/+2348104015180" target="_blank">
+              <BsWhatsapp className="footer-icon" />
+            </a>
+            <a
+              href="https://web.facebook.com/justice.agbonma?_rdc=1&_rdr"
+              target="_blank"
+            >
+              <CiFacebook className="footer-icon" />
+            </a>
+            <a href="https://www.instagram.com/ajis_tech" target="_blank">
+              <BsInstagram className="footer-icon" />
+            </a>
+            <a target="_blank" href="mailto:ajistechnology@gmail.com">
+              <AiOutlineMail className="footer-icon" />
+            </a>
           </div>
           <div className="PolicyRow">
-            Consult your physician and follow all safety instructions before
-            beginning any exercise program or using any supplement or meal
-            replacement product, especially if you have any unique medical
-            conditions or needs. The contents on our website are for
-            informational purposes only, and are not intended to diagnose any
-            medical condition, replace the advice of a healthcare professional,
-            or provide any medical advice, diagnosis, or treatment.
+            AJIS TECHNOLOGY is a leading technology company that specializes in
+            building innovative software solutions for businesses. Our mission
+            is to empower businesses with technology solutions that streamline
+            their operations, enhance their customer experience, and drive
+            growth. We are committed to delivering high-quality, cost-effective
+            solutions that help businesses achieve their goals.
           </div>
           <div className="PolicyRow">
-            As an Amazon Associate, we may earn from qualifying purchases.
+            Justice Isreal Agbonma (Founder / CEO){" "}
+            <a href="https://justice-agbonma.vercel.app/" target="_blank">
+              View profile
+            </a>
+            .
           </div>
         </div>
       </div>
