@@ -4,9 +4,6 @@ function Teamwork() {
   return (
     <div className="teamwork">
       <div className="lower-team-bg">
-        <h2>
-          If you can conceive it <br /> we can acheive it
-        </h2>
         <div className="team-quote">
           <p>our product is</p>
           <h2>cool</h2>
@@ -16,6 +13,10 @@ function Teamwork() {
           <h2>epic</h2>
           <p>the customer is</p>
           <h2>everything</h2>
+          <p> If you can</p>
+          <h2>conceive it</h2>
+          <p>we can</p>
+          <h2>acheive it</h2>
           <div className="team-btn">
             <button>let's talk</button>
           </div>
