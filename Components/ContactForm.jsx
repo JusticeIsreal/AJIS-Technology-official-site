@@ -23,6 +23,7 @@ function ContactForm() {
   return (
     <div className="contact-form">
       <form className="login-form" onSubmit={handleSubmit(onSubmit)}>
+        <h2>let's talk</h2>
         <div className="input-main-con">
           <div className="input-con">
             <input
