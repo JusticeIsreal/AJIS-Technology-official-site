@@ -614,4 +614,181 @@
 .contact-form form .login-btn-link input:hover {
   background: black;
   color: white;
+}
+
+.Footer {
+  font-family: nunito-sans, sans-serif;
+  text-align: center;
+}
+@media only screen and (min-width: 680px) {
+  .Footer {
+    text-align: left;
+  }
+}
+
+.TopBar {
+  margin: auto;
+  max-width: 1280px;
+  padding: 40px 0;
+}
+@media only screen and (min-width: 680px) {
+  .TopBar {
+    padding: 45px 80px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+}
+
+.GetTheApp {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.11;
+  color: #2b2738;
+  margin: 0 -15px;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+@media only screen and (min-width: 680px) {
+  .GetTheApp {
+    flex-wrap: nowrap;
+    align-items: center;
+    white-space: nowrap;
+  }
+}
+
+.GetTheAppTitle {
+  width: 189px;
+  height: 63px;
+  margin: 16px auto;
+  padding: 0 20px;
+}
+@media only screen and (min-width: 680px) {
+  .GetTheAppTitle {
+    padding: 0;
+    margin: 0 8px;
+  }
+}
+
+.GoogleApp {
+  width: 189px;
+  height: 63px;
+  margin: 16px auto;
+  padding: 0 20px;
+}
+@media only screen and (min-width: 680px) {
+  .GoogleApp {
+    padding: 0;
+    margin: 0 8px;
+  }
+}
+
+.DesktopSocialList {
+  padding-bottom: 40px;
+  width: 100%;
+}
+@media only screen and (min-width: 680px) {
+  .DesktopSocialList {
+    display: none;
+  }
+}
+
+.Twitter {
+  border: 1px lightgray solid;
+  width: 33px;
+  height: 33px;
+  margin-left: 5px;
+}
+
+.Facebook {
+  border: 1px lightgray solid;
+  width: 33px;
+  height: 33px;
+  margin-left: 5px;
+}
+
+.Instagram {
+  border: 1px lightgray solid;
+  width: 33px;
+  height: 33px;
+  margin-left: 5px;
+}
+
+.HR {
+  display: none;
+}
+@media only screen and (min-width: 680px) {
+  .HR {
+    height: 0;
+    padding: 0;
+    margin: 0;
+    display: block;
+    border-bottom: 1px #cacada solid;
+  }
+}
+
+.BottomBar {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media only screen and (min-width: 680px) {
+  .BottomBar {
+    flex-wrap: nowrap;
+    padding: 40px 80px 60px;
+    justify-content: space-between;
+  }
+}
+
+.Menu {
+  margin-bottom: 30px;
+  min-width: 50%;
+}
+@media only screen and (min-width: 680px) {
+  .Menu {
+    min-width: unset;
+    margin-bottom: 0;
+    margin-right: 40px;
+  }
+}
+
+.MenuHead {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.11;
+  color: #2b2738;
+}
+
+.MenuLink {
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 2;
+  color: #2f6cb3;
+}
+@media only screen and (min-width: 680px) {
+  .MenuLink {
+    white-space: nowrap;
+  }
+}
+
+.Policy {
+  width: 100%;
+  max-width: 764px;
+  font-size: 12px;
+  line-height: 1.33;
+  color: #2b2738;
+  margin: 0 20px;
+}
+
+.PolicyRow {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
