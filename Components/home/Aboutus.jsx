@@ -4,7 +4,10 @@ function Aboutus() {
   return (
     <div className="about-us">
       <div className="video-con">
-        <img src="/jessy-smith-zFOm6KzA-7g-unsplash-removebg-preview.png" alt="" />
+        <img
+          src="/jessy-smith-zFOm6KzA-7g-unsplash-removebg-preview.png"
+          alt=""
+        />
       </div>
       <div className="about-txt-con">
         <h1>
@@ -25,7 +28,10 @@ function Aboutus() {
           <img src="/10k+-01-01.png" alt="" />
         </div>
         <div className="lets-talk-btn">
-          <button>Let's talk !</button>
+          <a target="_blank" href="mailto:ajistechnology@gmail.com">
+            {" "}
+            <button>Let's talk !</button>
+          </a>
         </div>
         <img
           className="bg-img"

@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import axios from "axios";
 
 function ContactForm() {
   const {
@@ -18,7 +19,16 @@ function ContactForm() {
 
   // submit user details
   const onSubmit = async (data) => {
-    // reset();
+    axios
+      .post("https://api-j.onrender.com/ajis/meaasge/vistorsmsg", data)
+      .then((resp) => {
+        console.log(resp);
+        alert("Message sent, we would get bck to you as soo as possible");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+    reset();
   };
   return (
     <div className="contact-form">
@@ -29,10 +39,10 @@ function ContactForm() {
             <input
               type="text"
               placeholder="First name"
-              {...register("username", { required: true })}
+              {...register("visitorname", { required: true })}
             />
           </div>
-          {errors.username && (
+          {errors.visitorname && (
             <p className="validation-text">Kindly enter a name.</p>
           )}
         </div>
@@ -42,10 +52,10 @@ function ContactForm() {
             <input
               type="email"
               placeholder="Enter Email"
-              {...register("useremail", { required: true })}
+              {...register("visitoremail", { required: true })}
             />
           </div>
-          {errors.useremail && (
+          {errors.visitoremail && (
             <p className="validation-text">
               Kindly enter a valid email address.
             </p>
@@ -56,10 +66,10 @@ function ContactForm() {
             <input
               type="number"
               placeholder="Enter phone number"
-              {...register("phonenumber", { required: true })}
+              {...register("visitorphonenumber", { required: true })}
             />
           </div>
-          {errors.phonenumber && (
+          {errors.visitorphonenumber && (
             <p className="validation-text">
               Kindly enter a valid phone number.
             </p>
