@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Orbitron", sans-serif;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: rgba(245, 245, 245, 0);
+  display: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  display: none;
+  background-color: rgba(65, 105, 225, 0);
+}
+
+.banner {
+  background: url(/onur-binay-wi3xBnWZlvQ-unsplash.jpg) no-repeat fixed;
+  background-size: contain;
+  height: 275px;
+  overflow: hidden !important;
+  background-color: black;
+}
+@media only screen and (min-width: 680px) {
+  .banner {
+    background: url(/onur-binay-wi3xBnWZlvQ-unsplash.jpg) no-repeat center center fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-size: cover;
+    height: calc(100vh - 40px);
+  }
+}/*# sourceMappingURL=style.css.map */

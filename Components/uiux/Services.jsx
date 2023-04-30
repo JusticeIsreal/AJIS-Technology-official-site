@@ -13,13 +13,13 @@ function Services() {
       id: "2",
       service: "Ui / Ux",
       img: "/tirza-van-dijk-o1SKqmgSDbg-unsplash.jpg",
-      desc: "Our team of designers create all types of resources and tools to disseminate your message. From presentation design to informative digital flyers, we’ll develop the on-brand assets you need.",
+      desc: "Our team of designers create all types of resources and tools to disseminate your message, we’ll develop the on-brand assets you need.",
     },
     {
       id: "4",
       service: "Interface",
       img: "/create-website-ui-ux-desi-selar.co-62719fcd2cd6c.jpg ",
-      desc: "Stand out in the digital space with scroll-stopping motion graphics and static designs . Our dynamic, eye-catching creative captures the attention of online users and drives results.",
+      desc: "with motion graphics and static designs. Our dynamic, eye-catching creative captures the attention of online users and drives results.",
     },
     {
       id: "6",
