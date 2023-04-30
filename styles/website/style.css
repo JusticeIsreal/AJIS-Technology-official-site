@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Orbitron", sans-serif;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: rgba(245, 245, 245, 0);
+  display: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  display: none;
+  background-color: rgba(65, 105, 225, 0);
+}
+
+.website-banner-main-con {
+  background: url(/igor-miske-JVSgcV8_vb4-unsplash.jpg) no-repeat fixed;
+  background-size: contain;
+  height: 275px;
+  overflow: hidden !important;
+  background-color: black;
+}
+@media only screen and (min-width: 680px) {
+  .website-banner-main-con {
+    background: url(/igor-miske-JVSgcV8_vb4-unsplash.jpg) no-repeat center center fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-size: cover;
+    height: calc(100vh - 40px);
+  }
+}
+.website-banner-main-con .banner-text {
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  height: 120px;
+}
+@media only screen and (min-width: 680px) {
+  .website-banner-main-con .banner-text {
+    height: 250px;
+  }
+}
+.website-banner-main-con .banner-text h2 {
+  line-height: 2;
+}
+.website-banner-main-con .banner-text p {
+  width: 60%;
+}
+
+.websit-about-us {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+@media only screen and (min-width: 680px) {
+  .websit-about-us {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+.websit-about-us .video-con {
+  order: 2;
+  margin: 10px;
+  transform: scale(0.95);
+}
+@media only screen and (min-width: 680px) {
+  .websit-about-us .video-con {
+    width: 30%;
+    order: 1 !important;
+  }
+}
+.websit-about-us .website-about-txt-con {
+  width: 100%;
+}
+.websit-about-us .website-about-txt-con .website-about-txt-con-text {
+  margin: 0 auto;
+}
+@media only screen and (min-width: 680px) {
+  .websit-about-us .website-about-txt-con .website-about-txt-con-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    max-width: 900px;
+  }
+}
+.websit-about-us .website-about-txt-con .website-about-txt-con-text h1 {
+  padding-top: 40px;
+  font-size: 30px;
+}
+.websit-about-us .website-about-txt-con .website-about-txt-con-text p {
+  max-width: 400px;
+  padding-bottom: 40px;
+}
+
+.website-service {
+  background: white;
+}
+.website-service .single-card .card {
+  height: 250px;
+  background: whitesmoke;
+}
+@media only screen and (min-width: 900px) {
+  .website-service .single-card .card {
+    height: 350px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .website-service .single-card .card {
+    height: 450px;
+  }
+}
+.website-service .single-card .card .service-txt h2 {
+  color: black !important;
+}
+.website-service .single-card .card .service-txt p {
+  color: black !important;
+}/*# sourceMappingURL=style.css.map */

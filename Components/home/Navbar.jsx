@@ -6,15 +6,18 @@ function Navbar() {
   return (
     <div className="nav-main-con">
       <div className="nav-logo-con">
-        <Image
-          src="/AJIS FILE 1.png"
-          alt="logo"
-          height={50}
-          width={50}
-          //   fill
-          //   sizes="100vw"
-          //   className="logo-image"
-        ></Image>
+        <Link href="/">
+          {" "}
+          <Image
+            src="/AJIS FILE 1.png"
+            alt="logo"
+            height={50}
+            width={50}
+            //   fill
+            //   sizes="100vw"
+            //   className="logo-image"
+          ></Image>
+        </Link>
       </div>
       <nav>
         <ul>
