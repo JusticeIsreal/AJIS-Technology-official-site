@@ -1,0 +1,181 @@
+// @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:wght@300&family=Source+Code+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+// global variables
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Orbitron", sans-serif;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: rgba(245, 245, 245, 0);
+  display: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  display: none;
+  background-color: rgba(65, 105, 225, 0);
+}
+
+$font-family: "Poppins", sans-serif;
+$bg-light: #f9f9f9;
+$font-light: #666;
+$bg-gray: #eee;
+$bg-dark-gray: #444;
+$bg-dark: #342e37;
+$txt-blue: #3c91e6;
+$txt-light-blue: #cfe8ff;
+
+@mixin flexDisplay($justifyProp, $alignProp, $flexDirection) {
+  display: flex;
+  justify-content: $justifyProp;
+  align-items: $alignProp;
+  flex-direction: $flexDirection;
+}
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint==phone {
+    @media only screen and (min-width: 320px) {
+      @content;
+    }
+  }
+  @if $breakpoint==bigphone {
+    @media only screen and (min-width: 680px) {
+      @content;
+    }
+  }
+  @if $breakpoint==tablet {
+    @media only screen and (min-width: 900px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==desktop {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+}
+// BANNER
+.mobile-app {
+  // border: 10px solid red !important;
+  background: url(/the-average-tech-guy-DsmDqiYduaU-unsplash.jpg) no-repeat fixed;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  height: 275px;
+  overflow: hidden !important;
+  background-color: black;
+
+  @include responsive(bigphone) {
+    background: url(/the-average-tech-guy-DsmDqiYduaU-unsplash.jpg) no-repeat center
+      center fixed;
+    @include flexDisplay(center, center, row);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: calc(100vh - 40px);
+  }
+
+  .banner-text {
+    backdrop-filter: blur(2px);
+    // border: 2px solid red;
+    height: 120px;
+    @include responsive(bigphone) {
+      height: 250px;
+    }
+    h2 {
+      line-height: 2;
+    }
+    p {
+      width: 60%;
+    }
+  }
+}
+
+// section 2
+.websit-about-us {
+  margin: 0 auto;
+
+  @include flexDisplay(space-between, center, column);
+
+  @include responsive(bigphone) {
+    height: auto;
+    // margin-top: 100px;
+    @include flexDisplay(center, center, row);
+  }
+
+  .video-con {
+    order: 2;
+    margin: 10px;
+    transform: scale(0.95);
+    @include responsive(bigphone) {
+      width: 30%;
+      order: 1 !important;
+    }
+  }
+
+  .website-about-txt-con {
+    width: 100%;
+
+    .website-about-txt-con-text {
+      margin: 0 auto;
+
+      @include responsive(bigphone) {
+        @include flexDisplay(space-between, center, column);
+        max-width: 900px;
+      }
+      h1 {
+        padding-top: 40px;
+        font-size: 30px;
+      }
+      p {
+        max-width: 400px;
+        padding-bottom: 40px;
+      }
+    }
+  }
+}
+
+// website-service
+.website-service {
+  // border: 2px solid red;
+  background: white;
+
+  .single-card {
+    // border: 2px solid red;
+
+    .card {
+      height: 250px;
+      background: whitesmoke;
+      transform: scale(0.98);
+
+      @include responsive(tablet) {
+        height: 350px;
+      }
+      @include responsive(desktop) {
+        height: 450px;
+      }
+      .service-txt {
+        // border: 2px solid red;
+        backdrop-filter: blur(5px);
+        background: #00000054;
+        width: 100%;
+        h2 {
+          // color: black !important;
+        }
+
+        p {
+          // color: black !important;
+        }
+      }
+    }
+  }
+}
