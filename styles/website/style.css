@@ -110,6 +110,7 @@
 .website-service .single-card .card {
   height: 250px;
   background: whitesmoke;
+  transform: scale(0.98);
 }
 @media only screen and (min-width: 900px) {
   .website-service .single-card .card {
@@ -121,9 +122,9 @@
     height: 450px;
   }
 }
-.website-service .single-card .card .service-txt h2 {
-  color: black !important;
-}
-.website-service .single-card .card .service-txt p {
-  color: black !important;
+.website-service .single-card .card .service-txt {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.3294117647);
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

@@ -153,9 +153,9 @@ $txt-light-blue: #cfe8ff;
     // border: 2px solid red;
 
     .card {
-      // border: 2px solid red;
       height: 250px;
       background: whitesmoke;
+      transform: scale(0.98);
 
       @include responsive(tablet) {
         height: 350px;
@@ -165,12 +165,15 @@ $txt-light-blue: #cfe8ff;
       }
       .service-txt {
         // border: 2px solid red;
+        backdrop-filter: blur(5px);
+        background: #00000054;
+        width: 100%;
         h2 {
-          color: black !important;
+          // color: black !important;
         }
 
         p {
-          color: black !important;
+          // color: black !important;
         }
       }
     }
